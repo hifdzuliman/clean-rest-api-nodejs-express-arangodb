@@ -1,0 +1,40 @@
+{
+  "name": "crizcroz-peniti-customer-apis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js"
+  },
+  "author": "Bill Sourour (Dev Mastery)",
+  "license": "ISC",
+  "bin": {
+    "cusmulai": "./src/index.js",
+    "cusworkers": "./src/workers.js"
+  },
+  "dependencies": {
+    "arangojs": "^6.13.0",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "helmet": "^3.21.2",
+    "morgan": "^1.9.1"
+  },
+  "jest": {
+    "verbose": true,
+    "testRegex": ".spec.js"
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/env",
+        {
+          "targets": {
+            "node": "10.8.0"
+          }
+        }
+      ]
+    ]
+  }
+}
