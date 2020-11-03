@@ -49,6 +49,5 @@ if (!module.parent) {
 }
 
 module.exports = {
-    app,
-    kafka
+    app
 }

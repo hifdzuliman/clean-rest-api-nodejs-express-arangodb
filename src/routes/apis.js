@@ -1,9 +1,8 @@
 const router = require('express').Router()
 const handleContactsRequest = require('./../functions')
 const adaptRequest = require ('./../helpers/adapt-request')
-const config = require ("./../env")
 
-const path = config.path.defaultPath
+const path = "api"
 
 router.post(path +"/register", contactsController)
 router.get(path +"/login", contactsController)

@@ -1,11 +1,4 @@
-const config = require('../env')
-const sgMail = require("@sendgrid/mail")
-const dateformat = require("dateformat")
-const nacl = require("tweetnacl")
-const util = require("tweetnacl-util")
 const otherFunction = require("./other-function-list")
-
-sgMail.setApiKey(config.sendgrid.apiKey)
 
 module.exports = function makeContactList ( database, aql ) {
   const db = database

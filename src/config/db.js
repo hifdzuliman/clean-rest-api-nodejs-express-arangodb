@@ -1,16 +1,15 @@
-var config = require("../env"),
-  arangojs = require('arangojs'),
+var arangojs = require('arangojs'),
   db = new arangojs.Database({ 
     // Database connection
-    url:  config.database.url
+    url:  "127.0.0.1:8529"
   }),
   aql = arangojs.aql
 
 // Database selection
-db.useDatabase(config.database.database);
+db.useDatabase("testdb");
 
 // Speficy the database user
-db.useBasicAuth(config.database.username, config.database.password);
+db.useBasicAuth("root", "root");
 
 module.exports = {
   db,

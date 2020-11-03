@@ -2,11 +2,9 @@ const {
   mandatoryError
  } = require ('../helpers/errors')
 const makeHttpError = require ('../helpers/http-error')
-const kafka = require('../kafka')
-const config = require('./../env')
 let responseCode
 
-const path = config.path.defaultPath
+const path = "api"
 
 module.exports = function makeContactsEndpointHandler ({ functionList }) {
   return async function handle (httpRequest) {
