@@ -1,12 +1,12 @@
 var arangojs = require('arangojs'),
   db = new arangojs.Database({ 
     // Database connection
-    url:  "127.0.0.1:8529"
+    url:  "http://127.0.0.1:8529/"
   }),
   aql = arangojs.aql
 
 // Database selection
-db.useDatabase("testdb");
+db.useDatabase("testing");
 
 // Speficy the database user
 db.useBasicAuth("root", "root");
